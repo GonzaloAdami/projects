@@ -1,5 +1,5 @@
 <nav>
-  <img src="../assets/img/menu.png" alt="menu" class="menu">
+
   <ul>
     <li id="home" (click)="showHome()">INICIO <hr *ngIf="home"></li>
     <li id="project" (click)="showProject()">PROYECTOS<hr *ngIf="project"></li>
@@ -9,3 +9,4 @@
 
 <app-project *ngIf="project"></app-project>
 <app-home *ngIf="home"></app-home>
+<app-contact *ngIf="contact"></app-contact>

@@ -25,7 +25,7 @@ export class ProjectComponent implements OnInit{
       <div class="img" style="background-image: url(${item.img})"></div>
       <h2>${item.name}</h2>
       <p class="descripcionCard">${item.description}</p>
-      <div class="dificultad" style="background-image: url(./assets/img/${item.dificultad}.png)"></div>
+      <div class="dificultad" style="background-image: url(./assets/img/${item.dificultad}.webp)"></div>
       <a href="${item.url}">VER PROYECTO</a>
       `;
     const box = document.getElementById('box');
