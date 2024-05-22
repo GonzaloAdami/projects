@@ -5,14 +5,13 @@
     box-sizing : border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-$primary : rgb(219, 216, 216);
-$card: rgb(77, 80, 90);
-$bar : rgb(12, 73, 102);
+$primary : #031421;
+$card: #0B2D35;
+$bar : rgba(12, 74, 102, 0);
 body{
     overflow-x: hidden;
     width: 100vw;
     background-color: $primary;
-
 }
 
 .card{
@@ -24,6 +23,7 @@ body{
     height: 25em;
     border-radius: 20px;
     background-color: $card;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 h2{
@@ -31,7 +31,7 @@ h2{
     font-size: 1.5em;
 }
 
-p{
+.descripcionCard{
     color: white;
     font-size: 0.9em;
     text-align: center;
@@ -50,7 +50,7 @@ a{
     text-decoration: none;
     color: white;
     margin-bottom: 0.8em;
-    background-image: linear-gradient(to right, rgb(16, 110, 192), rgb(1, 92, 172) 50%);
+    background-image: linear-gradient(to right, #7C864F, #61693d);
     border-radius: 20px;
 }
 
@@ -70,11 +70,12 @@ a{
 nav{
     display: flex;
     float: left;
-    
+   
 
 }
 nav ul{
     position: absolute;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,8 +92,10 @@ nav ul{
 nav ul li{
 
     list-style: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.555);
     font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
     cursor: pointer;
    
 }
@@ -129,22 +132,22 @@ hr {
 
    
 }
+.active{
+    color: white;
+}
+
+.desactive{
+    color: rgba(255, 255, 255, 0.555);
+}
+
 
 @media (max-width: 600px) {
-     li{
-        display: none;
-    }
-    nav{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 5em;
-        background-color: $bar;
-        border-radius: 0 0 20px 20px;
-    }
-    .menu{
-        display: block;
-    }
+   
+ ul {
+    font-size: 0.75em;
+    gap: 0;
+    left: 0;
+ }
+
 }
 
